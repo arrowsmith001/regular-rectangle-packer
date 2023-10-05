@@ -1,16 +1,14 @@
 # regular_rectangle_packer
 
-A new Flutter project.
+Sometimes in Flutter you just want to lay out some squares or rectangles tightly and uniformly. 
 
-## Getting Started
+- You want them all to fit on screen/in their parent...
+- You want them to all be a certain shape...
+- You don't want too much empty space in your layout...
+- You don't particularly care how horizontal/vertical the items are laid out.
 
-This project is a starting point for a Flutter application.
+`ListView`s tend to take up too much horizontal space. `Wrap` widgets are good but wont resize to fit everything on screen, and aren't specialized for items of fixed proportion.
 
-A few resources to get you started if this is your first Flutter project:
+Introducing the `RegularRectanglePacker`. It's a bit like a `Wrap` widget but it's designed for items of fixed aspect ratio, and it fits them all in the parent widget, with constant size, reasonably tightly.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Currently an unpublished work-in-progress.
